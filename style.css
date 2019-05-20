@@ -33,12 +33,12 @@ margin: 0;
     margin: 0 auto;
     background-color: white;
 }
-.footer {
+.header {
 	width: 1200px;
 	height: 60px;
 	padding-top: 20px;
 }	
-.footer-logo {
+.header-logo {
 	width: 119px;
 	height: 28px;
 	float: left;
@@ -46,17 +46,17 @@ margin: 0;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
-.footer-nav {
+.header-nav {
 	float: right;
 }
-.footer-nav-list {
+.header-nav-list {
 	list-style-type: none;
 	display: flex;
 }
-.footer-nav-list__item {
+.header-nav-list__item {
 	margin-left: 55px;
 }
-.footer-nav-list__item a{
+.header-nav-list__item a{
 	font-family: 'OpenSans-Light', 'Arial';
 	font-size: 18px;
 	line-height: 20px;
@@ -65,7 +65,7 @@ margin: 0;
     text-decoration: none;
     color: black;
 }
-.footer-nav-list__item a:hover{
+.header-nav-list__item a:hover{
 	text-decoration: underline;
 }
 .hero {
@@ -176,17 +176,24 @@ margin: 0;
 .work-list-block {
 	width: 260px;
 	height: 340px;
+	margin-bottom: 100px;
 	background-color: #f7f7f7;
 }
 .work-list-block__title {
-color: #d2d1d1;
+	font-family: 'OpenSans-Bold', 'Arial';
+    color: #d2d1d1;
+    font-size: 25px;
+    margin-top: 140px;
+    text-align: center;
 }
-.work-list-block__title:hover .work-list-block__link{
-	visibility: visible;
-    cursor: pointer;
+.work-list-block__text {
+	font-family: 'OpenSans-Light';
+    color: #d2d1d1;
+    font-size: 10px;
+    text-align: center;
 }
 .work-list-block__link {
-	margin-top: 242px;
+	margin-top: 100px;
 	text-align: center;
 	width: 260px;
 	height: 60px;
@@ -194,6 +201,127 @@ color: #d2d1d1;
 	background-color: #575757;
 	background-image: url(img/arrow.png);
 	background-repeat: no-repeat;
-	background-position: 75% center;
-	visibility: hidden;
+	background-position: 80% center;
+	visibility: visible;
 }
+.work-list-block__link p {
+	font-family: 'OpenSans-Light';
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+.subscribe {
+	margin: 0 auto;
+	width: 1200px;
+	padding-top: 100px;
+	background-color: #f5f5f5;
+}
+.subscribe h3{
+	margin-bottom: 20px;
+	font-family: 'OpenSans-Bold', 'Arial';
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.subscribe p {
+	font-family: 'OpenSans-Light';
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+}
+.subscribe-but {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 90px;
+	width: 310px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 30px;
+	
+}
+.subscribe-but a {
+	font-family: 'OpenSans-Semibold', 'Arial';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+	color: black;
+	text-decoration: none;
+	line-height: 50px;
+}
+.social {
+	width: 1200px;
+	margin: 100px auto;
+	background-color: white;
+}
+.social-list {
+	margin: 0 auto;
+	list-style-type: none;
+	width: 460px;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.social-item {
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border: 1px solid black;
+}
+.social-item:hover {
+	background-color: #55acee;
+	cursor: pointer;
+}
+.facebook {
+	background-image: url(img/facebook.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.twitter {
+	background-image: url(img/twitter.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.www {
+	background-image: url(img/www.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.google-plus {
+	background-image: url(img/google-plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.footer {
+	width: 900px;
+	margin: 100px auto;
+	padding: 0 120px;
+	background-color: #3b3b3b;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-block {
+	width: 275px;
+	height: 150px;
+}
+.footer-block h4{
+	font-family: 'OpenSans-Light';
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.footer-block-nav {
+list-style-type: none;
+}
+.footer-block a, p, span{
+	font-family: 'OpenSans-Light';
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+ }
