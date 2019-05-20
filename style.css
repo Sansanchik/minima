@@ -1,0 +1,199 @@
+@font-face {
+font-family: 'OpenSans-Light';
+src: url('fonts/OpenSans-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'OpenSans-Bold';
+src: url('fonts/OpenSans-Bold.ttf') format('truetype')
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'OpenSans-Semibold';
+src: url('fonts/OpenSans-Semibold.ttf') format('truetype')
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'Flatform_Light';
+src: url('fonts/Flatform_Light.otf');
+font-weight: normal;
+font-style: normal;
+}
+* {
+padding: 0;
+margin: 0;	
+}
+
+.wrapper {
+	width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
+}
+.footer {
+	width: 1200px;
+	height: 60px;
+	padding-top: 20px;
+}	
+.footer-logo {
+	width: 119px;
+	height: 28px;
+	float: left;
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.footer-nav {
+	float: right;
+}
+.footer-nav-list {
+	list-style-type: none;
+	display: flex;
+}
+.footer-nav-list__item {
+	margin-left: 55px;
+}
+.footer-nav-list__item a{
+	font-family: 'OpenSans-Light', 'Arial';
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.footer-nav-list__item a:hover{
+	text-decoration: underline;
+}
+.hero {
+	margin: 0 auto;
+	padding-top: 215px;
+	width: 1200px;
+	height: 500px;
+    position: relative;
+	background-image: url(img/hero-image.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.hero h1 {
+	font-family: 'Flatform_Light', 'Arial';
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+}
+.hero p {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'OpenSans-Light', 'Arial';
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+}
+.hero-button {
+	margin: 0 auto;
+	width: 290px;
+	height: 50px;
+    background-color: #4d4d4d;
+	background-image: url(img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 75% center;
+	text-align: center;
+	border-radius: 30px;
+}
+.hero-button a {
+	font-family: 'OpenSans-Semibold', 'Arial';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 50px;
+}
+.future {
+	margin: 0 auto;
+	width: 1200px;
+	height: 270px;
+	display: flex;
+	justify-content: space-around;
+}
+.future-block {
+	width: 300px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.future-block img { width: 80px; height: 80px;}
+
+.future-block h3 {
+    margin-top: 35px; 
+	margin-bottom: 35px;
+	font-family: 'OpenSans-Bold', 'Arial';
+	font-weight: bold;
+	font-size: 22px;
+}
+.future-block p {
+	font-family: 'OpenSans-Light';
+	font-size: 14px;
+	font-weight: normal;
+}
+.slide {
+	background-image: url(img/separator.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0 auto;
+	width: 1200px;
+	height: 600px;
+	padding-top: 80px;
+}
+.slide h2, .work h3{
+	margin-bottom: 20px;
+	font-family: 'OpenSans-Bold', 'Arial';
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.slide p {
+	font-family: 'OpenSans-Light';
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.slide img { width: 686px; height: 383px; margin: 0 auto;}
+
+.work-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+.work-list-block {
+	width: 260px;
+	height: 340px;
+	background-color: #f7f7f7;
+}
+.work-list-block__title {
+color: #d2d1d1;
+}
+.work-list-block__title:hover .work-list-block__link{
+	visibility: visible;
+    cursor: pointer;
+}
+.work-list-block__link {
+	margin-top: 242px;
+	text-align: center;
+	width: 260px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #575757;
+	background-image: url(img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 75% center;
+	visibility: hidden;
+}
