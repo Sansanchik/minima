@@ -48,6 +48,7 @@ margin: 0;
 }
 .header-nav {
 	float: right;
+	margin-top: 10px;
 }
 .header-nav-list {
 	list-style-type: none;
@@ -128,7 +129,7 @@ margin: 0;
 	align-items: center;
 	flex-direction: column;
 }
-.future-block img { width: 80px; height: 80px;}
+.future-block img { display: block; width: 80px; height: 80px;}
 
 .future-block h3 {
     margin-top: 35px; 
@@ -166,7 +167,7 @@ margin: 0;
 	text-align: center;
 	margin-bottom: 50px;
 }
-.slide img { width: 686px; height: 383px; margin: 0 auto;}
+.slide img { display: block; width: 686px; height: 383px; margin: 0 auto;}
 
 .work-list {
 	list-style-type: none;
@@ -202,7 +203,10 @@ margin: 0;
 	background-image: url(img/arrow.png);
 	background-repeat: no-repeat;
 	background-position: 80% center;
-	visibility: visible;
+  opacity: 0;
+}
+.work-list-block:hover + .work-list-block__link {
+ opacity: 1;
 }
 .work-list-block__link p {
 	font-family: 'OpenSans-Light';
@@ -214,7 +218,8 @@ margin: 0;
 .subscribe {
 	margin: 0 auto;
 	width: 1200px;
-	padding-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 10px;
 	background-color: #f5f5f5;
 }
 .subscribe h3{
@@ -228,18 +233,17 @@ margin: 0;
 .subscribe p {
 	font-family: 'OpenSans-Light';
 	font-size: 14px;
+	color: black;
 	font-weight: normal;
 	text-align: center;
 }
 .subscribe-but {
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 90px;
-	width: 310px;
+    display: block;
+    margin: 60px auto 90px auto;
+    width: 310px;
 	height: 50px;
 	border: 1px solid black;
 	border-radius: 30px;
-	
 }
 .subscribe-but a {
 	font-family: 'OpenSans-Semibold', 'Arial';
@@ -253,7 +257,8 @@ margin: 0;
 }
 .social {
 	width: 1200px;
-	margin: 100px auto;
+	margin: 0 auto;
+	padding-top: 30px;
 	background-color: white;
 }
 .social-list {
@@ -296,8 +301,8 @@ margin: 0;
 }
 .footer {
 	width: 900px;
-	margin: 100px auto;
-	padding: 0 120px;
+	margin: 50px auto;
+	padding: 20px 120px;
 	background-color: #3b3b3b;
 	display: flex;
 	justify-content: space-between;
@@ -309,7 +314,7 @@ margin: 0;
 .footer-block h4{
 	font-family: 'OpenSans-Light';
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-align: left;
     margin-bottom: 30px;
@@ -317,10 +322,13 @@ margin: 0;
 .footer-block-nav {
 list-style-type: none;
 }
+.footer-block-nav__item {
+	margin: 5px 0; 
+}
 .footer-block a, p, span{
 	font-family: 'OpenSans-Light';
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     text-align: left;
     text-decoration: none;
