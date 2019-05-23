@@ -28,8 +28,10 @@ margin: 0;
 }
 
 .wrapper {
-	width: 1200px;
-    padding: 0;
+	box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
     background-color: white;
 }
@@ -149,8 +151,6 @@ margin: 0;
 	background-repeat: no-repeat;
 	background-position: center top;
 	margin: 0 auto;
-	width: 1200px;
-	height: 600px;
 	padding-top: 80px;
 }
 .slide h2, .work h3{
@@ -173,8 +173,11 @@ margin: 0;
  display: block;
   width: 686px; 
   height: 383px;
-   margin: 0 auto;}
-
+  margin: 0 auto;
+}
+.work {
+	margin-top: 20px;
+}
 .work-list {
 	list-style-type: none;
 	display: flex;
@@ -308,7 +311,6 @@ margin: 0;
 	background-position: center center;
 }
 .footer {
-	width: 900px;
 	margin: 50px auto;
 	padding: 30px 120px;
 	background-color: #3b3b3b;
