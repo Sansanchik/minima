@@ -1,2 +1,2 @@
 # minima
-Not ready
+ready
