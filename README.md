@@ -1,2 +1,3 @@
 # minima
-ready
+
+https://sansanchik.github.io/minima/
